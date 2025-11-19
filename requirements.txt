@@ -1,0 +1,47 @@
+yt-dlp>=2024.1
+pandas>=1.5
+numpy
+scikit-learn
+tqdm
+python-dateutil
+joblib
+lightgbm
+tabulate
+scikit-optimize
+
+# source venv/Scripts/activate
+
+"""
+scrape_chanakya.py
+    - Runs the scraper and creates: raw_chanakya_filtered_by_age.csv
+
+preprocess.py
+    - Takes the raw CSV and creates:
+        • cleaned_chanakya.csv
+        • title_tfidf.npz
+        • ohe_cats.joblib
+
+1_compare_models.py
+    - Uses the cleaned data and transformers
+    - Compares multiple ML models and prints the comparison report
+
+2_build_final_model.py
+
+3_tune_and_save_model.py
+    - Uses raw_chanakya_filtered_by_age.csv
+    - Tunes the best model and saves the final production files:
+        • final_tuned_model.joblib
+        • final_tfidf_vectorizer.joblib
+        • final_ohe_cats.joblib
+
+4_predict_views.py
+    - Loads the final production model + transformers
+    - Generates and prints final prediction results
+"""
+
+"""
+5 fold run 
+1-> python fold_runner.py
+2-> python predict_with_all_folds.py
+
+"""
