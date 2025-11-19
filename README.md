@@ -2,7 +2,7 @@
 
 A complete machine learning pipeline built to predict the expected view count and estimated revenue of future (unreleased) YouTube videos. The project uses metadata gathered from the channel “The Chanakya Dialogues Hindi” and applies feature engineering, model training, tuning, and a 5-fold evaluation framework to produce a reliable prediction system.
 
----
+
 
 ## 1. Project Overview
 
@@ -18,7 +18,7 @@ To do this, we predict:
 
 Using machine learning, the system converts intuition-based content planning into a measurable, data-driven decision-making process.
 
----
+
 
 ## 2. Goals of the Project
 
@@ -37,7 +37,7 @@ Using machine learning, the system converts intuition-based content planning int
 - Predict ad revenue before publishing
 - Help creators choose topics, guests, and formats strategically
 
----
+
 
 ## 3. Dataset Construction
 
